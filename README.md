@@ -2,14 +2,15 @@
 
 Package portscan предоставляет инструменты для конкурентного сканирования портов.
 
-<details><summary>Example</summary>
-<p>
+## Example
 
 ```go
-import "portscan"
+go get github.com/kaluginDS/portscan@latest
 ```
 
 ```go
+import "portscan"
+
 // 1. Инициализация сканера с настройками конкурентности и таймаута подключения
 scanner := New(
 	WithConcurrency(50),
@@ -72,7 +73,7 @@ Ports \- структура для генерации портов.
 
 ```go
 type Ports struct {
-    // contains filtered or unexported fields
+    values []int
 }
 ```
 
