@@ -4,7 +4,7 @@ Package portscan предоставляет инструменты для кон
 
 ## Example
 
-```go
+```bash
 go get github.com/kaluginDS/portscan@latest
 ```
 
